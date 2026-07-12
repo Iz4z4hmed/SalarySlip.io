@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Slip Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="BigBox">
+
+<div class="box">
+
+     <h1>
+        <img src="logo.png" alt="Logo" class="logo">
+     </h1>
+
+    <h2>Salary Slip</h2>
+
+
+    <input type="text" id="eid" placeholder="Employee ID (C12345)" required>
+<input type="date" id="eid" placeholder="Date of Birth/Passport" required>
+
+    <button onclick="search()"> Search</button>
+
+    <!-- PDF Preview -->
+    <div id="viewer" style="display:none;">
+        <iframe id="pdfFrame" width="100%" height="500px" frameborder="0"></iframe>
+
+        <button id="downloadBtn" onclick="downloadPDF()">
+            ⬇ Download Salary Slip
+        </button>
+    </div>
+
+
+</div>
+
+<p>&copy; 2026 - Sobha Construction Limited</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
